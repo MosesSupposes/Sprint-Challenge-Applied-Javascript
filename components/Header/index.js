@@ -1,4 +1,3 @@
-import { appendChildren } from '../../util'
 // STEP 1: Create a header component.
 // -----------------------
 // Using a function create the component you see below:
@@ -30,4 +29,13 @@ function Header() {
     document.querySelector('.header-container').appendChild(header)
     
     return header
+}
+
+
+// Helper
+
+function appendChildren(to, elements) {
+    elements.forEach(el => {
+        to.appendChild(el)
+    })
 }
