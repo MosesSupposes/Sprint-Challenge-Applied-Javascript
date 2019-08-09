@@ -71,7 +71,7 @@ function Card(articleHeadline, authorImgSrc, authorName) {
     imgContainer.appendChild(img)
     appendChildren(author, [imgContainer, span])
     appendChildren(card, [headline, author])
-    document.body.appendChild(card)
+    document.querySelector('.cards-container').appendChild(card)
     
     return card
 }
