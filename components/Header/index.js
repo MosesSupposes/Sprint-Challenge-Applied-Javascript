@@ -29,7 +29,7 @@ function Header() {
     const header = document.createElement('div')
     header.classList.add('header')
 
-    const date = document.createElement('date')
+    const date = document.createElement('span')
     date.classList.add('date')
     date.textContent = 'March 28, 2019'
 
