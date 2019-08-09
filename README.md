@@ -50,6 +50,8 @@ methods such as map, filter, and reduce.
 
 5. What is a component?
 
+A component is a reusable piece of UI.
+
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
