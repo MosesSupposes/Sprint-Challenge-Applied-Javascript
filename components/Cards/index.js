@@ -66,7 +66,7 @@ function Card(articleHeadline, authorImgSrc, authorName) {
     img.src = authorImgSrc
 
     const span = document.createElement('span')
-    span.textContent = authorName
+    span.textContent = `By ${authorName}`
     
     imgContainer.appendChild(img)
     appendChildren(author, [imgContainer, span])
