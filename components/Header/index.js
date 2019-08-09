@@ -9,6 +9,22 @@
 //  </div >
 // And add it to the DOM in the .headerContainer component
 
+
+/**
+ * Main
+ */
+
+
+Header()
+
+
+
+
+/**
+ * Helpers
+ */
+
+
 function Header() {
     const header = document.createElement('div')
     header.classList.add('header')
@@ -31,15 +47,7 @@ function Header() {
     return header
 }
 
-/**
- * Main
- */
 
-Header()
-
-
-
-// Helper
 function appendChildren(to, elements) {
     elements.forEach(el => {
         to.appendChild(el)

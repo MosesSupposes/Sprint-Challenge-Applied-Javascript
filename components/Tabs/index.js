@@ -8,7 +8,22 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-function fetchTabData() {
+/**
+ * Main
+ */
+
+
+fetchTabs()
+
+
+
+
+/**
+ * Helpers
+ */
+
+
+function fetchTabs() {
     axios
         .get("https://lambda-times-backend.herokuapp.com/topics")
         .then(function renderTabs(res) {
@@ -28,4 +43,3 @@ function Tab(topic) {
     return tab
 }
 
-fetchTabData()
