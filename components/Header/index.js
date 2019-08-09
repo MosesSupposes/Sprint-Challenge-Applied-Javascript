@@ -22,7 +22,7 @@ function Header() {
 
     const temp = document.createElement('span')
     temp.classList.add('temp')
-    temp.textContent = 98&deg;
+    temp.textContent = "98"+ '\u00B0'
 
     appendChildren(header, [date, h1, temp])
 
