@@ -31,9 +31,15 @@ function Header() {
     return header
 }
 
+/**
+ * Main
+ */
+
+Header()
+
+
 
 // Helper
-
 function appendChildren(to, elements) {
     elements.forEach(el => {
         to.appendChild(el)
