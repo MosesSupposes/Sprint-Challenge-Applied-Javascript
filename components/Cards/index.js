@@ -18,6 +18,36 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
+
+/**
+ * Main
+ */
+
+
+fetchCards()
+
+
+
+
+/**
+ * Helpers
+ */
+
+
+function fetchCards() {
+    axios
+        .get('https://lambda-times-backend.herokuapp.com/articles')
+        .then(function renderCards(res){
+            const { data: { articles } } = res
+
+            Object.values(articles).forEach(function(articleType) {
+                articleType.forEach(function renderIntoCard(article) {
+                    return Card(article.headline, article.authorPhoto, article.authorName)
+                })
+            })
+        })
+}
+
 function Card(articleHeadline, authorImgSrc, authorName) {
     const card = document.createElement('div')
     card.classList.add('card')
