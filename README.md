@@ -34,10 +34,14 @@ The DOM stands for "Document Object Model." It is a tree-like data structure
 representing all of the HTML elements on a web page.
 
 2. What is an event?
+
 An event is a user-triggered or server-triggered action that your browser can 
 respond to.
 
 3. What is an event listener?
+
+An event listener is a function that waits for an event to occur. When it does occur,
+it responds to the event in some way.
 
 4. Why would we convert a NodeList into an Array?
 
