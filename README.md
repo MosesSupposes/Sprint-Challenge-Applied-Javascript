@@ -45,6 +45,9 @@ it responds to the event in some way.
 
 4. Why would we convert a NodeList into an Array?
 
+It's common to convert a NodeList into an Array to get access to common array 
+methods such as map, filter, and reduce.
+
 5. What is a component?
 
 ### Git Set up
