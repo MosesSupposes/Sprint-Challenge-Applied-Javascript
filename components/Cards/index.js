@@ -77,7 +77,6 @@ function Card(articleHeadline, authorImgSrc, authorName) {
 }
 
 
-// Helper
 function appendChildren(to, elements) {
     elements.forEach(el => {
         to.appendChild(el)
